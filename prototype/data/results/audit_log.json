@@ -1,0 +1,6507 @@
+[
+  {
+    "timestamp": "2026-04-07T01:33:31.818466",
+    "case_id": "190824",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:33:42.428512",
+    "case_id": "190824",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 25000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 25000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:33:42.441690",
+    "case_id": "190824",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:33:42.461434",
+    "case_id": "185527",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:33:52.131427",
+    "case_id": "185527",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 8000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 8000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:33:52.136945",
+    "case_id": "185527",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:33:52.153829",
+    "case_id": "200835",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:02.683391",
+    "case_id": "200835",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 6000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.8,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 6000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:02.694537",
+    "case_id": "200835",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.8,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:02.714912",
+    "case_id": "192831",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:13.401651",
+    "case_id": "192831",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 8900 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 8900 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:13.412945",
+    "case_id": "192831",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:13.417646",
+    "case_id": "185686",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:24.361412",
+    "case_id": "185686",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 7500 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 7500 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:24.378326",
+    "case_id": "185686",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:24.395719",
+    "case_id": "178191",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:34.881782",
+    "case_id": "178191",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 15000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 15000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:34.898762",
+    "case_id": "178191",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:34.920784",
+    "case_id": "209350",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:45.220678",
+    "case_id": "209350",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 13000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 13000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:45.227906",
+    "case_id": "209350",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:45.243351",
+    "case_id": "179161",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:55.366706",
+    "case_id": "179161",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 14612 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 14612 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:55.381781",
+    "case_id": "179161",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:34:55.399662",
+    "case_id": "181969",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:06.571808",
+    "case_id": "181969",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 9000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.8,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 9000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:06.584044",
+    "case_id": "181969",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.8,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:06.600608",
+    "case_id": "214115",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:19.317705",
+    "case_id": "214115",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 17500 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 17500 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:19.323743",
+    "case_id": "214115",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:19.348566",
+    "case_id": "206832",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:30.562930",
+    "case_id": "206832",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 15000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 15000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:30.567219",
+    "case_id": "206832",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:30.572436",
+    "case_id": "200856",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:40.992017",
+    "case_id": "200856",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 6000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 6000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:41.003140",
+    "case_id": "200856",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to declined",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:41.010107",
+    "case_id": "198256",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:51.464920",
+    "case_id": "198256",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 10000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 10000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:51.471459",
+    "case_id": "198256",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:35:51.478401",
+    "case_id": "198152",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:01.426065",
+    "case_id": "198152",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 6999 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 6999 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:01.426065",
+    "case_id": "198152",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:01.439801",
+    "case_id": "210029",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:13.027786",
+    "case_id": "210029",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 8000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 8000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:13.042738",
+    "case_id": "210029",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:13.059192",
+    "case_id": "193686",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:22.471249",
+    "case_id": "193686",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 7400 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 7400 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:22.484538",
+    "case_id": "193686",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:22.500862",
+    "case_id": "174662",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:32.771866",
+    "case_id": "174662",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 7500 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 7500 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:32.785582",
+    "case_id": "174662",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:32.800763",
+    "case_id": "208346",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:42.835486",
+    "case_id": "208346",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 10000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 10000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:42.843726",
+    "case_id": "208346",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:42.859645",
+    "case_id": "192918",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:52.337806",
+    "case_id": "192918",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 6000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 6000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:52.349633",
+    "case_id": "192918",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to declined",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:36:52.369115",
+    "case_id": "203732",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:02.466749",
+    "case_id": "203732",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 8500 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 8500 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:02.477260",
+    "case_id": "203732",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to declined",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:02.498418",
+    "case_id": "211366",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:14.202986",
+    "case_id": "211366",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 20000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 20000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:14.212534",
+    "case_id": "211366",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:14.235919",
+    "case_id": "201535",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:23.573585",
+    "case_id": "201535",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 7500 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 7500 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:23.586031",
+    "case_id": "201535",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:23.609416",
+    "case_id": "190686",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:33.514757",
+    "case_id": "190686",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 15000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 15000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:33.525249",
+    "case_id": "190686",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:33.547536",
+    "case_id": "191226",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:47.257899",
+    "case_id": "191226",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 10000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 10000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:47.263125",
+    "case_id": "191226",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:47.272278",
+    "case_id": "211982",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:58.222021",
+    "case_id": "211982",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 10000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 10000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:58.231949",
+    "case_id": "211982",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:37:58.238578",
+    "case_id": "186562",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:08.714517",
+    "case_id": "186562",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 6000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 6000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:08.719856",
+    "case_id": "186562",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:08.737224",
+    "case_id": "193596",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:19.385170",
+    "case_id": "193596",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 20000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 20000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:19.387949",
+    "case_id": "193596",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:19.396529",
+    "case_id": "178536",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:29.513517",
+    "case_id": "178536",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 9000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 9000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:29.518887",
+    "case_id": "178536",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to declined",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:29.529412",
+    "case_id": "205158",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:39.178152",
+    "case_id": "205158",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 6300 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 6300 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:39.186343",
+    "case_id": "205158",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:39.216776",
+    "case_id": "196123",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:50.726639",
+    "case_id": "196123",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 8000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 8000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:50.737508",
+    "case_id": "196123",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:38:50.743817",
+    "case_id": "185743",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:00.303949",
+    "case_id": "185743",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 8000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 8000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:00.303949",
+    "case_id": "185743",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:00.316162",
+    "case_id": "203483",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:10.308591",
+    "case_id": "203483",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 4000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:10.327810",
+    "case_id": "190270",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:21.391970",
+    "case_id": "190270",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 2000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:21.407884",
+    "case_id": "184883",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:31.952153",
+    "case_id": "184883",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 3500 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:31.965830",
+    "case_id": "211248",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:40.805548",
+    "case_id": "211248",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.95,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.95 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 5000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:40.821326",
+    "case_id": "204212",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:51.709907",
+    "case_id": "204212",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.85,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 2900 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:39:51.723918",
+    "case_id": "209096",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:02.860904",
+    "case_id": "209096",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 2500 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:02.879994",
+    "case_id": "197375",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:13.080005",
+    "case_id": "197375",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 5000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:13.104616",
+    "case_id": "198098",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:24.249925",
+    "case_id": "198098",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 3000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:24.275875",
+    "case_id": "196189",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:34.992276",
+    "case_id": "196189",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 2000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:35.008731",
+    "case_id": "191473",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:46.369553",
+    "case_id": "191473",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 5000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:46.399244",
+    "case_id": "191851",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:57.084273",
+    "case_id": "191851",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 3500 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:40:57.116833",
+    "case_id": "193351",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:41:09.353152",
+    "case_id": "193351",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 3500 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:41:09.364525",
+    "case_id": "182677",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:41:19.365994",
+    "case_id": "182677",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 5000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:41:19.383232",
+    "case_id": "191016",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:41:31.171799",
+    "case_id": "191016",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 5000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:41:31.187196",
+    "case_id": "204170",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:41:41.477162",
+    "case_id": "204170",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.85,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 500 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:41:41.486709",
+    "case_id": "190677",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:41:52.956754",
+    "case_id": "190677",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 2500 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:41:52.982525",
+    "case_id": "211640",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:42:04.663751",
+    "case_id": "211640",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 4000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:42:04.680878",
+    "case_id": "193900",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:42:16.394171",
+    "case_id": "193900",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 3500 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:42:16.403393",
+    "case_id": "186412",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:42:27.077627",
+    "case_id": "186412",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 2500 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:42:27.111412",
+    "case_id": "212133",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:42:38.388642",
+    "case_id": "212133",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 1000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:42:38.410853",
+    "case_id": "181028",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:42:49.655949",
+    "case_id": "181028",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 3000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:42:49.675728",
+    "case_id": "179757",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:01.595552",
+    "case_id": "179757",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 20000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.8,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 20000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:01.595552",
+    "case_id": "179757",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to cancelled",
+    "confidence": 0.8,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:01.612579",
+    "case_id": "200865",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:12.288771",
+    "case_id": "200865",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 7800 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 7800 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:12.296546",
+    "case_id": "200865",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:12.304608",
+    "case_id": "181106",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:21.531833",
+    "case_id": "181106",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 7100 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 7100 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:21.544770",
+    "case_id": "181106",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:21.544770",
+    "case_id": "183064",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:31.565710",
+    "case_id": "183064",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 10000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 10000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:31.565710",
+    "case_id": "183064",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:31.584706",
+    "case_id": "205433",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:41.198699",
+    "case_id": "205433",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 25000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 25000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:41.203416",
+    "case_id": "205433",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:41.215921",
+    "case_id": "208049",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:50.411119",
+    "case_id": "208049",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 8000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 8000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:50.411119",
+    "case_id": "208049",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:50.420785",
+    "case_id": "184291",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:59.993240",
+    "case_id": "184291",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 14000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 14000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:43:59.999308",
+    "case_id": "184291",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:00.006018",
+    "case_id": "213474",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:09.196907",
+    "case_id": "213474",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 12000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 12000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:09.206332",
+    "case_id": "213474",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:09.209507",
+    "case_id": "211940",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:19.150617",
+    "case_id": "211940",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 17000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 17000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:19.150617",
+    "case_id": "211940",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:19.161503",
+    "case_id": "175591",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:29.582948",
+    "case_id": "175591",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 6000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 6000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:29.588673",
+    "case_id": "175591",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:29.599751",
+    "case_id": "200176",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:39.766325",
+    "case_id": "200176",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 6400 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 6400 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:39.771567",
+    "case_id": "200176",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:39.780054",
+    "case_id": "175744",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:50.267575",
+    "case_id": "175744",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 15000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 15000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:50.276382",
+    "case_id": "175744",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to cancelled",
+    "confidence": 0.9,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:50.276382",
+    "case_id": "210926",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:59.629485",
+    "case_id": "210926",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 10000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 10000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:59.641761",
+    "case_id": "210926",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:44:59.649526",
+    "case_id": "175120",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:10.352706",
+    "case_id": "175120",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 10000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 10000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:10.370026",
+    "case_id": "175120",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:10.374543",
+    "case_id": "197081",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:26.913560",
+    "case_id": "197081",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 15000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 15000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:26.916225",
+    "case_id": "197081",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:26.925446",
+    "case_id": "195208",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:37.039390",
+    "case_id": "195208",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 11500 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 11500 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:37.048688",
+    "case_id": "195208",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:37.058329",
+    "case_id": "204299",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:47.114122",
+    "case_id": "204299",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 10000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 10000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:47.121873",
+    "case_id": "204299",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:47.129143",
+    "case_id": "193828",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:57.161264",
+    "case_id": "193828",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 15000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 15000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:57.172576",
+    "case_id": "193828",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:45:57.177752",
+    "case_id": "202701",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:07.660922",
+    "case_id": "202701",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 15000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.8,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 15000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:07.673115",
+    "case_id": "202701",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to approved",
+    "confidence": 0.8,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:07.684851",
+    "case_id": "186151",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:18.568813",
+    "case_id": "186151",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 15000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 15000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:18.576979",
+    "case_id": "186151",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:18.583741",
+    "case_id": "185461",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:28.069722",
+    "case_id": "185461",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 5500 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 5500 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:28.071733",
+    "case_id": "185461",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:28.083393",
+    "case_id": "212632",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:37.968863",
+    "case_id": "212632",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 15000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 15000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:37.971654",
+    "case_id": "212632",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:37.993430",
+    "case_id": "185674",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:47.612705",
+    "case_id": "185674",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 15000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 15000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:47.628485",
+    "case_id": "185674",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:47.644188",
+    "case_id": "179465",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:57.095380",
+    "case_id": "179465",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 10000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 10000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:57.095380",
+    "case_id": "179465",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:46:57.111212",
+    "case_id": "184865",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:07.710340",
+    "case_id": "184865",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 13350 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 13350 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:07.725675",
+    "case_id": "184865",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:07.725675",
+    "case_id": "174968",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:17.548878",
+    "case_id": "174968",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 12750 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 12750 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:17.548878",
+    "case_id": "174968",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:17.564532",
+    "case_id": "190008",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:29.223079",
+    "case_id": "190008",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 16500 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.8,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 16500 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:29.235760",
+    "case_id": "190008",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to approved",
+    "confidence": 0.8,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:29.237893",
+    "case_id": "197533",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for supervised autonomy",
+    "confidence": null,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:40.049714",
+    "case_id": "197533",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 6000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 6000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:40.059971",
+    "case_id": "197533",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "supervised",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:40.062965",
+    "case_id": "187256",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:51.472725",
+    "case_id": "187256",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 35000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.95,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.95 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 35000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:51.488237",
+    "case_id": "187256",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.95,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:47:51.503786",
+    "case_id": "203919",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:01.882206",
+    "case_id": "203919",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 50000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.95,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.95 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 50000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:01.894816",
+    "case_id": "203919",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.95,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:01.897599",
+    "case_id": "185993",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:13.582149",
+    "case_id": "185993",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 35000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 35000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:13.594620",
+    "case_id": "185993",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:13.607413",
+    "case_id": "189124",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:24.233012",
+    "case_id": "189124",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 37000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.9,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.90 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 37000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:24.236765",
+    "case_id": "189124",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.9,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:24.254709",
+    "case_id": "201069",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:34.950840",
+    "case_id": "201069",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 50000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 50000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:34.964607",
+    "case_id": "201069",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:34.974669",
+    "case_id": "213846",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:48.111290",
+    "case_id": "213846",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 50000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 50000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:48.127259",
+    "case_id": "213846",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.85,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:48.141910",
+    "case_id": "214064",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:56.696645",
+    "case_id": "214064",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.95,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.95 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 5000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:48:56.721127",
+    "case_id": "184487",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:49:07.998545",
+    "case_id": "184487",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 1000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:49:08.030342",
+    "case_id": "212689",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:49:17.300954",
+    "case_id": "212689",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.95,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.95 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 2000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:49:17.316796",
+    "case_id": "190597",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:49:33.295066",
+    "case_id": "190597",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.8,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.80 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 5000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:49:33.309600",
+    "case_id": "212698",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:49:42.280287",
+    "case_id": "212698",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.95,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.95 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 5000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:49:42.288942",
+    "case_id": "212449",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:49:53.141660",
+    "case_id": "212449",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 50000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 50000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:49:53.141660",
+    "case_id": "212449",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:49:53.157795",
+    "case_id": "181016",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:05.406359",
+    "case_id": "181016",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 35000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.75,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.75 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 35000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:05.422421",
+    "case_id": "181016",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to cancelled",
+    "confidence": 0.75,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:05.436900",
+    "case_id": "201854",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:16.753768",
+    "case_id": "201854",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 50000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.85,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.85 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 50000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:16.755773",
+    "case_id": "201854",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from declined to cancelled",
+    "confidence": 0.85,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:16.755773",
+    "case_id": "190504",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:28.271798",
+    "case_id": "190504",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 46000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.75,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.75 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 46000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:28.287802",
+    "case_id": "190504",
+    "mode": "governed",
+    "event_type": "override",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Corrected from approved to cancelled",
+    "confidence": 0.75,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "modify",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:28.292960",
+    "case_id": "176840",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:39.960561",
+    "case_id": "176840",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 50000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.75,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.75 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 50000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:39.972318",
+    "case_id": "176840",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.75,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:39.981181",
+    "case_id": "185972",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:51.662787",
+    "case_id": "185972",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 35000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.75,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.75 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 35000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:51.662787",
+    "case_id": "185972",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.75,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:50:51.679049",
+    "case_id": "182689",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for restricted autonomy",
+    "confidence": null,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:51:02.503116",
+    "case_id": "182689",
+    "mode": "governed",
+    "event_type": "guardrail_triggered",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "Amount 26000 exceeds auto-approval ceiling of 5000",
+    "confidence": 0.75,
+    "governance_tier": "restricted",
+    "contract_compliant": false,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.75 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": false,
+        "reason": "Amount 26000 exceeds auto-approval ceiling of 5000"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:51:02.518783",
+    "case_id": "182689",
+    "mode": "governed",
+    "event_type": "hitl_approval",
+    "step_number": 4,
+    "action": "human_review",
+    "reasoning": "Agent decision matches expected outcome",
+    "confidence": 0.75,
+    "governance_tier": "restricted",
+    "contract_compliant": true,
+    "human_involved": true,
+    "human_decision": "approve",
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:51:02.531950",
+    "case_id": "176488",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:51:12.155685",
+    "case_id": "176488",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.95,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.95 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 5000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:51:12.173183",
+    "case_id": "210401",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:51:21.050318",
+    "case_id": "210401",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.95,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.95 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 5000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:51:21.064293",
+    "case_id": "180574",
+    "mode": "governed",
+    "event_type": "contract_created",
+    "step_number": 0,
+    "action": "create_intent_contract",
+    "reasoning": "Contract created for full_auto autonomy",
+    "confidence": null,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [],
+    "metadata": {}
+  },
+  {
+    "timestamp": "2026-04-07T01:51:30.083292",
+    "case_id": "180574",
+    "mode": "governed",
+    "event_type": "step",
+    "step_number": 4,
+    "action": "pre_decision_guardrail",
+    "reasoning": "All guardrails passed",
+    "confidence": 0.95,
+    "governance_tier": "full_auto",
+    "contract_compliant": true,
+    "human_involved": false,
+    "human_decision": null,
+    "guardrail_results": [
+      {
+        "name": "action_allowlist",
+        "allowed": true,
+        "reason": "Action 'make_decision' is permitted"
+      },
+      {
+        "name": "step_limit",
+        "allowed": true,
+        "reason": "Step 4/10 within limit"
+      },
+      {
+        "name": "confidence_gate",
+        "allowed": true,
+        "reason": "Confidence 0.95 meets threshold 0.7"
+      },
+      {
+        "name": "amount_ceiling",
+        "allowed": true,
+        "reason": "Amount 5000 within auto-approval ceiling"
+      }
+    ],
+    "metadata": {}
+  }
+]

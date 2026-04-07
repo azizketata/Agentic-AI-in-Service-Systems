@@ -1,0 +1,5 @@
+Principle,Theory,Key Citation,Prototype Evidence
+Prospective Intent Contracts,Principal-Agent Theory,"Jensen & Meckling, 1976",contract_violations = 0 for governed mode
+Graduated Autonomy,Levels of Automation (LOA),"Parasuraman, Sheridan, & Wickens, 2000",0 errors in supervised/restricted tiers vs 7 in full_auto
+Reasoning Trace Transparency,Accountability Theory,"Bovens, 2007","274 audit log entries, structured and queryable"
+Procedural Literacy Preservation,Meaningful Human Control (MHC),"Santoni de Sio & van den Hoven, 2018",72 HITL events; 26 agent errors corrected by human review

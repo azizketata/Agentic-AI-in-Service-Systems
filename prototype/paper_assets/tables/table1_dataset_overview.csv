@@ -1,0 +1,12 @@
+Characteristic,Value
+Total cases,101
+Total events,"2,089"
+Outcomes - Approved,18
+Outcomes - Declined,58
+Outcomes - Cancelled,25
+Risk tiers - Low,29
+Risk tiers - Medium,59
+Risk tiers - High,13
+Avg loan amount (EUR),"13,114"
+Median loan amount (EUR),"8,500"
+Amount range (EUR),"500 - 50,000"

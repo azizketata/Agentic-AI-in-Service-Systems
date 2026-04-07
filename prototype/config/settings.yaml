@@ -1,0 +1,35 @@
+# Global Settings
+# ===============
+
+# LLM Provider: "anthropic" or "openai"
+llm:
+  provider: "anthropic"
+  # Model names per provider
+  anthropic_model: "claude-sonnet-4-20250514"
+  openai_model: "gpt-4o"
+  temperature: 0.0        # Reproducibility
+  max_tokens: 2048
+
+# Data paths
+data:
+  raw_xes: "data/raw/BPI_Challenge_2012.xes"
+  processed_dir: "data/processed"
+  sample_dir: "data/sample"
+  sample_size: 100        # Number of stratified cases for demo
+
+# Risk tier thresholds (EUR)
+risk_tiers:
+  low_max: 5000
+  medium_max: 25000
+  # Above medium_max = high
+
+# Rule engine thresholds
+rule_engine:
+  auto_approve_max: 5000
+  max_loan_amount: 50000
+  standard_review_max: 25000
+
+# Agent settings
+agent:
+  max_steps: 10           # Max reasoning steps per case
+  confidence_threshold: 0.7  # Below this, escalate to human

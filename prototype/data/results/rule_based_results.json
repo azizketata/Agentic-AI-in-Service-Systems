@@ -1,0 +1,5034 @@
+[
+  {
+    "case_id": "190824",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 25000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 25000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 25000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 25000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.573299989104271,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185527",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 8000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.1922998819500208,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "200835",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 6000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.138199819251895,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "192831",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 8900.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 8900.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 8900.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 8900.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.149199903011322,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185686",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 7500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 7500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 7500.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 7500.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.110499957576394,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "178191",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 15000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.1043001431971788,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "209350",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 13000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 13000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 13000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 13000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0893000289797783,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "179161",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 14612.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 14612.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 14612.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 14612.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.5942000318318605,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "181969",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 9000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 9000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 9000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 9000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.3076001778244972,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "214115",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 17500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 17500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 17500.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 17500.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.129099866375327,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "206832",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 15000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0927000548690557,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "200856",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 6000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.105999806895852,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "198256",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 10000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0820000898092985,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "198152",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 6999.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 6999.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 6999.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 6999.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0760000441223383,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "210029",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 8000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0840999893844128,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "193686",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 7400.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 7400.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 7400.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 7400.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0720998980104923,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "174662",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 7500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 7500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 7500.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 7500.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.1356999166309834,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "208346",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 10000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0761001612991095,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "192918",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 6000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.0945999529212713,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "203732",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 8500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 8500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 8500.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 8500.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.1458001099526882,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "211366",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 20000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 20000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 20000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 20000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.2827001046389341,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "201535",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 7500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 7500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 7500.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 7500.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.2123000342398882,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "190686",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 15000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.1287000961601734,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "191226",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 10000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.1187000200152397,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "211982",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 10000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0917999316006899,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "186562",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 6000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.07849994674325,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "193596",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 20000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 20000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 20000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 20000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0880001354962587,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "178536",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 9000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 9000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 9000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 9000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.0621000546962023,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "205158",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 6300.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 6300.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 6300.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 6300.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0869998950511217,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "196123",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 8000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0778000578284264,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185743",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 8000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0825998615473509,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "203483",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 4000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 4000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 4000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 4000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0748000349849463,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "190270",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 2000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 2000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 2000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 2000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0961999651044607,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "184883",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 3500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 3500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 3500.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 3500 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.079200068488717,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "211248",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 5000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.377499895170331,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "204212",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 2900.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 2900.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 2900.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 2900 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.1766999959945679,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "209096",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 2500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 2500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 2500.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 2500 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.1160001158714294,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "197375",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 5000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0959000792354345,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "198098",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 3000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 3000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 3000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 3000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0971000883728266,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "196189",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 2000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 2000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 2000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 2000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0691001079976559,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "191473",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 5000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.083299983292818,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "191851",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 3500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 3500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 3500.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 3500 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.070900121703744,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "193351",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 3500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 3500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 3500.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 3500 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.096900086849928,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "182677",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 5000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.084399875253439,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "191016",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 5000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0764999315142632,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "204170",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 500.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 500 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0726999025791883,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "190677",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 2500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 2500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 2500.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 2500 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0798999574035406,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "211640",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 4000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 4000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 4000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 4000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.1857999488711357,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "193900",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 3500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 3500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 3500.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 3500 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.2175000738352537,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "186412",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 2500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 2500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 2500.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 2500 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.1116999667137861,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "212133",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 1000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 1000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 1000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 1000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.1308998800814152,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "181028",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 3000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 3000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 3000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 3000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0953000746667385,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "179757",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 20000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 20000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 20000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 20000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.1364000383764505,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "200865",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 7800.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 7800.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 7800.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 7800.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.0949000716209412,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "181106",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 7100.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 7100.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 7100.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 7100.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0830999817699194,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "183064",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 10000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.1050000321120024,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "205433",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 25000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 25000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 25000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 25000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.0949000716209412,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "208049",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 8000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 8000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.088900025933981,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "184291",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 14000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 14000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 14000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 14000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.0996998753398657,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "213474",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 12000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 12000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 12000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 12000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.0718000121414661,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "211940",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 17000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 17000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 17000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 17000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.0773001704365015,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "175591",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 6000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 2.2916998714208603,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "200176",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 6400.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 6400.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 6400.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 6400.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.6463999636471272,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "175744",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 15000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.1931001208722591,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "210926",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 10000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.7399000935256481,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "175120",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 10000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.7482000403106213,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "197081",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 15000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.6804998740553856,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "195208",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 11500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 11500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 11500.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 11500.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 FAIL",
+      "Decision: standard_review -> LoanOutcome.DECLINED",
+      "Reason: Standard review: missing offers or unusual timeline"
+    ],
+    "processing_time_ms": 1.474000047892332,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "204299",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 10000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.4489998575299978,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "193828",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 15000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.101700123399496,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "202701",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 15000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.108699943870306,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "186151",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 15000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.4154999516904354,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185461",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5500.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 5500.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.0714000090956688,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "212632",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 15000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.0461998172104359,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185674",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 15000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 15000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.0089999996125698,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "179465",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 10000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 10000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.0730999056249857,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "184865",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 13350.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 13350.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 13350.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 13350.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.1164001189172268,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "174968",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 12750.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 12750.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 12750.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 12750.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 1.0393999982625246,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "190008",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 16500.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 16500.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 16500.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 16500.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 0.9747999720275402,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "197533",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 6000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 6000.0,
+        "passed": true
+      },
+      {
+        "step": "standard_review",
+        "rule": "has_offers AND reasonable_duration",
+        "has_offers": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: standard_review \u2014 PASS",
+      "Decision: standard_review -> LoanOutcome.APPROVED",
+      "Reason: Standard review: offers present, reasonable timeline"
+    ],
+    "processing_time_ms": 0.9706001728773117,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "187256",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 35000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": false,
+        "sufficient_events": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 FAIL",
+      "Decision: senior_review -> LoanOutcome.DECLINED",
+      "Reason: Senior review: insufficient evidence for high-value loan"
+    ],
+    "processing_time_ms": 0.9609998669475317,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "203919",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 50000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": false,
+        "sufficient_events": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 FAIL",
+      "Decision: senior_review -> LoanOutcome.DECLINED",
+      "Reason: Senior review: insufficient evidence for high-value loan"
+    ],
+    "processing_time_ms": 0.9852999355643988,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185993",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 35000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": false,
+        "sufficient_events": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 FAIL",
+      "Decision: senior_review -> LoanOutcome.DECLINED",
+      "Reason: Senior review: insufficient evidence for high-value loan"
+    ],
+    "processing_time_ms": 0.9560000617057085,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "189124",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 37000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 37000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 37000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 37000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": false,
+        "sufficient_events": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 FAIL",
+      "Decision: senior_review -> LoanOutcome.DECLINED",
+      "Reason: Senior review: insufficient evidence for high-value loan"
+    ],
+    "processing_time_ms": 0.9545001666992903,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "201069",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 50000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": false,
+        "sufficient_events": false,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 FAIL",
+      "Decision: senior_review -> LoanOutcome.DECLINED",
+      "Reason: Senior review: insufficient evidence for high-value loan"
+    ],
+    "processing_time_ms": 0.9606999810785055,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "213846",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 50000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": false,
+        "sufficient_events": true,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 FAIL",
+      "Decision: senior_review -> LoanOutcome.DECLINED",
+      "Reason: Senior review: insufficient evidence for high-value loan"
+    ],
+    "processing_time_ms": 3.0473999213427305,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "214064",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 5000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.3932001311331987,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "184487",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 1000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 1000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 1000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 1000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0209998581558466,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "212689",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 2000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 2000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 2000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 2000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 0.9749999735504389,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "190597",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 5000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.2308999430388212,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "212698",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 5000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0033000726252794,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "212449",
+    "mode": "rule_based",
+    "decision": "declined",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 50000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": false,
+        "sufficient_events": true,
+        "reasonable_duration": true,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 FAIL",
+      "Decision: senior_review -> LoanOutcome.DECLINED",
+      "Reason: Senior review: insufficient evidence for high-value loan"
+    ],
+    "processing_time_ms": 0.9342001285403967,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "181016",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 35000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": true,
+        "sufficient_events": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 PASS",
+      "Decision: senior_review -> LoanOutcome.APPROVED",
+      "Reason: Senior review: all criteria met for high-value loan"
+    ],
+    "processing_time_ms": 0.9103999473154545,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "201854",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 50000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": true,
+        "sufficient_events": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 PASS",
+      "Decision: senior_review -> LoanOutcome.APPROVED",
+      "Reason: Senior review: all criteria met for high-value loan"
+    ],
+    "processing_time_ms": 0.9230999276041985,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "190504",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 46000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 46000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 46000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 46000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": true,
+        "sufficient_events": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 PASS",
+      "Decision: senior_review -> LoanOutcome.APPROVED",
+      "Reason: Senior review: all criteria met for high-value loan"
+    ],
+    "processing_time_ms": 0.8729000110179186,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "176840",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 50000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 50000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": true,
+        "sufficient_events": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 PASS",
+      "Decision: senior_review -> LoanOutcome.APPROVED",
+      "Reason: Senior review: all criteria met for high-value loan"
+    ],
+    "processing_time_ms": 0.9008999913930893,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185972",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 35000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 35000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": true,
+        "sufficient_events": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 PASS",
+      "Decision: senior_review -> LoanOutcome.APPROVED",
+      "Reason: Senior review: all criteria met for high-value loan"
+    ],
+    "processing_time_ms": 0.8698999881744385,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "182689",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 26000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 26000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 26000.0,
+        "passed": false
+      },
+      {
+        "step": "tier_routing",
+        "rule": "amount <= 25000 -> standard, else senior",
+        "value": 26000.0,
+        "passed": true
+      },
+      {
+        "step": "senior_review",
+        "rule": "has_offers AND sufficient_events AND reasonable_duration",
+        "has_offers": true,
+        "sufficient_events": true,
+        "reasonable_duration": true,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 FAIL",
+      "Rule engine: tier_routing \u2014 PASS",
+      "Rule engine: senior_review \u2014 PASS",
+      "Decision: senior_review -> LoanOutcome.APPROVED",
+      "Reason: Senior review: all criteria met for high-value loan"
+    ],
+    "processing_time_ms": 0.8505000732839108,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "176488",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 5000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 0.8412001188844442,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "210401",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 5000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.0043999645859003,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "180574",
+    "mode": "rule_based",
+    "decision": "approved",
+    "confidence": 1.0,
+    "num_steps": 3,
+    "steps_taken": [
+      {
+        "step": "amount_check",
+        "rule": "amount <= 50000",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "viability_check",
+        "rule": "amount > 0",
+        "value": 5000.0,
+        "passed": true
+      },
+      {
+        "step": "auto_approve_check",
+        "rule": "amount <= 5000",
+        "value": 5000.0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule engine: amount_check \u2014 PASS",
+      "Rule engine: viability_check \u2014 PASS",
+      "Rule engine: auto_approve_check \u2014 PASS",
+      "Decision: auto_approve -> LoanOutcome.APPROVED",
+      "Reason: Amount 5000 below auto-approval threshold"
+    ],
+    "processing_time_ms": 1.209799898788333,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  }
+]

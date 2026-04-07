@@ -1,0 +1,4 @@
+Mode,Accuracy,Avg Confidence,Avg Steps,Avg Time (ms),Governance Events,HITL Interventions
+Rule-Based,49/101 (48.5%),1.00,4.4,1,0,0
+Agentic,68/101 (67.3%),0.85,4.0,10637,0,0
+Governed,94/101 (93.1%),0.85,4.0,10676,346,72

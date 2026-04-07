@@ -1,0 +1,10 @@
+Metric,Value
+Total agentic failures,33
+Cancelled blind spots,25
+False approvals,6
+False declines,2
+Avg confidence when wrong,85%
+High-confidence errors (>=80%),31
+Errors caught by governance,26
+Errors missed by governance,7
+Governance catch rate,79%

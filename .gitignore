@@ -1,0 +1,56 @@
+# ===========================================
+# ICIS Paper - exclude from version control
+# ===========================================
+icis-2026-paper/sections/*.tex
+icis-2026-paper/**/*.tex
+
+# LaTeX build artifacts (in case of local compilation)
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+
+# PDF outputs (keep source papers but exclude compiled outputs)
+icis-2026-paper/*.pdf
+
+# Overleaf sync artifacts
+*.synctex.gz(busy)
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+dist/
+build/
+
+# Prototype - large data files
+prototype/data/raw/
+prototype/data/processed/
+
+.CLAUDE.md

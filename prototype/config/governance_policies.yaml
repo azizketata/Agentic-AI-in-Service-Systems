@@ -1,0 +1,58 @@
+# Governance Policies
+# ===================
+
+# Autonomy tiers — determines HITL density
+autonomy_tiers:
+  full_auto:
+    description: "Agent operates end-to-end, post-hoc review only"
+    conditions:
+      max_amount: 5000
+      risk_tier: "low"
+    hitl_points: []
+
+  supervised:
+    description: "Agent reasons freely, human approves final decision"
+    conditions:
+      max_amount: 25000
+      risk_tier: "medium"
+    hitl_points: ["final_decision"]
+
+  restricted:
+    description: "Human approves each significant action"
+    conditions:
+      min_amount: 25001
+      risk_tier: "high"
+    hitl_points: ["assessment", "action_selection", "final_decision"]
+
+# Intent contract defaults
+intent_contract:
+  acceptable_actions:
+    - "assess_application"
+    - "check_completeness"
+    - "lookup_credit_policy"
+    - "calculate_risk_score"
+    - "create_offer"
+    - "request_additional_info"
+    - "make_decision"
+  forbidden_actions:
+    - "modify_loan_amount"
+    - "override_policy"
+    - "bypass_review"
+  max_steps: 10
+  timeout_seconds: 120
+
+# Guardrail rules
+guardrails:
+  - name: "action_allowlist"
+    description: "Block actions not in intent contract"
+    enabled: true
+  - name: "step_limit"
+    description: "Block execution if max steps exceeded"
+    enabled: true
+  - name: "confidence_gate"
+    description: "Escalate to human if confidence below threshold"
+    enabled: true
+    threshold: 0.7
+  - name: "amount_ceiling"
+    description: "Block auto-approval above configured threshold"
+    enabled: true

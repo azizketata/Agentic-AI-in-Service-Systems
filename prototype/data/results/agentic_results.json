@@ -1,0 +1,4244 @@
+[
+  {
+    "case_id": "190824",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 190824 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 25000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 25000}) -> APPLICATION ISSUES FOUND: 3 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 25000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 65/100 (HIGH)\nFactors: amount=25000 EUR, events=3, offers=0, duration=0h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 11036.399299977347,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185527",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 185527 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 8000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 8, 'num_offers': 0, 'amount': 8000}) -> APPLICATION ISSUES FOUND: 8 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 8000, 'num_events': 8, 'num_offers': 0, 'case_duration_hours': 2.1}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=8000 EUR, events=8, offers=0, duration=2h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9834.387599956244,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "200835",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 200835 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 6000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 95, 'num_offers': 5, 'amount': 6000}) -> APPLICATION ISSUES FOUND: 95 events, 5 offers.\n- Unusually high number of events \u2014 may indicate processing difficulties or rework.",
+      "[TOOL] calculate_risk_score({'amount': 6000, 'num_events': 95, 'num_offers': 5, 'case_duration_hours': 552.6}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=6000 EUR, events=95, offers=5, duration=553h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 11561.269200174138,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "192831",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 192831 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 8900}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 8900}) -> APPLICATION ISSUES FOUND: 3 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 8900, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 65/100 (HIGH)\nFactors: amount=8900 EUR, events=3, offers=0, duration=0h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 10852.438900154084,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185686",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 185686 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 7500}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 7500}) -> APPLICATION ISSUES FOUND: 6 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 7500, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 0.6}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=7500 EUR, events=6, offers=0, duration=1h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 11063.346999930218,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "178191",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 178191 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 15000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 14, 'num_offers': 0, 'amount': 15000}) -> APPLICATION ISSUES FOUND: 14 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 15000, 'num_events': 14, 'num_offers': 0, 'case_duration_hours': 4.5}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=15000 EUR, events=14, offers=0, duration=4h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10550.769000081345,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "209350",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 209350 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 13000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 13000}) -> APPLICATION ISSUES FOUND: 6 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 13000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 0.2}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=13000 EUR, events=6, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 10545.266600092873,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "179161",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 179161 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 14612.0}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 14612.0}) -> APPLICATION ISSUES FOUND: 6 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 14612.0, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 33.2}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=14612 EUR, events=6, offers=0, duration=33h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10346.134499879554,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "181969",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 181969 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 9000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 61, 'num_offers': 9, 'amount': 9000}) -> APPLICATION ISSUES FOUND: 61 events, 9 offers.\n- Unusually high number of events \u2014 may indicate processing difficulties or rework.",
+      "[TOOL] calculate_risk_score({'amount': 9000, 'num_events': 61, 'num_offers': 9, 'case_duration_hours': 529.0}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=9000 EUR, events=61, offers=9, duration=529h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 11149.623000063002,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "214115",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 214115 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 17500}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 17500}) -> APPLICATION ISSUES FOUND: 6 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 17500, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 1.4}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=17500 EUR, events=6, offers=0, duration=1h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10547.76949994266,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "206832",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 206832 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 15000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 15000}) -> APPLICATION ISSUES FOUND: 6 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 15000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 0.1}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=15000 EUR, events=6, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 12977.529200026765,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "200856",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 200856 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 6000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 32, 'num_offers': 5, 'amount': 6000}) -> APPLICATION COMPLETE: 32 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 6000, 'num_events': 32, 'num_offers': 5, 'case_duration_hours': 623.8}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=6000 EUR, events=32, offers=5, duration=624h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10271.998799871653,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "198256",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 198256 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 10000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 10000}) -> APPLICATION ISSUES FOUND: 3 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 10000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 65/100 (HIGH)\nFactors: amount=10000 EUR, events=3, offers=0, duration=0h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 10552.993700141087,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "198152",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 198152 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 6999.0}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 12, 'num_offers': 0, 'amount': 6999.0}) -> APPLICATION ISSUES FOUND: 12 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 6999.0, 'num_events': 12, 'num_offers': 0, 'case_duration_hours': 13.1}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=6999 EUR, events=12, offers=0, duration=13h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10444.857999915257,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "210029",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 210029 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 8000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 8000}) -> APPLICATION ISSUES FOUND: 6 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 8000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 3.3}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=8000 EUR, events=6, offers=0, duration=3h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 12069.874300155789,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "193686",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 193686 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 7400}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 14, 'num_offers': 0, 'amount': 7400}) -> APPLICATION ISSUES FOUND: 14 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 7400, 'num_events': 14, 'num_offers': 0, 'case_duration_hours': 19.0}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=7400 EUR, events=14, offers=0, duration=19h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9637.825599871576,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "174662",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 174662 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 7500}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 7500}) -> APPLICATION ISSUES FOUND: 3 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 7500, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 65/100 (HIGH)\nFactors: amount=7500 EUR, events=3, offers=0, duration=0h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 11225.328899919987,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "208346",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 208346 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 10000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 8, 'num_offers': 0, 'amount': 10000}) -> APPLICATION ISSUES FOUND: 8 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 10000, 'num_events': 8, 'num_offers': 0, 'case_duration_hours': 0.7}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=10000 EUR, events=8, offers=0, duration=1h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 10166.04180005379,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "192918",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 192918 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 6000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 36, 'num_offers': 5, 'amount': 6000}) -> APPLICATION COMPLETE: 36 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 6000, 'num_events': 36, 'num_offers': 5, 'case_duration_hours': 772.3}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=6000 EUR, events=36, offers=5, duration=772h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9834.50789982453,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "203732",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 203732 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 8500}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 30, 'num_offers': 5, 'amount': 8500}) -> APPLICATION COMPLETE: 30 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 8500, 'num_events': 30, 'num_offers': 5, 'case_duration_hours': 639.6}) -> RISK ASSESSMENT: Score 40/100 (MEDIUM)\nFactors: amount=8500 EUR, events=30, offers=5, duration=640h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10418.398099951446,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "211366",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 211366 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 20000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 20000}) -> APPLICATION ISSUES FOUND: 6 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 20000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 2.0}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=20000 EUR, events=6, offers=0, duration=2h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 11186.4152001217,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "201535",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 201535 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 7500}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 10, 'num_offers': 0, 'amount': 7500}) -> APPLICATION ISSUES FOUND: 10 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 7500, 'num_events': 10, 'num_offers': 0, 'case_duration_hours': 13.2}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=7500 EUR, events=10, offers=0, duration=13h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9627.805199939758,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "190686",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 190686 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 15000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 14, 'num_offers': 0, 'amount': 15000}) -> APPLICATION ISSUES FOUND: 14 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 15000, 'num_events': 14, 'num_offers': 0, 'case_duration_hours': 97.4}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=15000 EUR, events=14, offers=0, duration=97h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10453.773700166494,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "191226",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 191226 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 10000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 8, 'num_offers': 0, 'amount': 10000}) -> APPLICATION ISSUES FOUND: 8 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 10000, 'num_events': 8, 'num_offers': 0, 'case_duration_hours': 6.8}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=10000 EUR, events=8, offers=0, duration=7h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9421.08829994686,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "211982",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 211982 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 10000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 10000}) -> APPLICATION ISSUES FOUND: 3 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 10000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 65/100 (HIGH)\nFactors: amount=10000 EUR, events=3, offers=0, duration=0h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 9897.421900182962,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "186562",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 186562 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 6000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 6000}) -> APPLICATION ISSUES FOUND: 6 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 6000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 0.2}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=6000 EUR, events=6, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 10476.024699863046,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "193596",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 193596 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 20000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 20000}) -> APPLICATION ISSUES FOUND: 3 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 20000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 65/100 (HIGH)\nFactors: amount=20000 EUR, events=3, offers=0, duration=0h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 10221.238400088623,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "178536",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 178536 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 9000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 28, 'num_offers': 5, 'amount': 9000}) -> APPLICATION COMPLETE: 28 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 9000, 'num_events': 28, 'num_offers': 5, 'case_duration_hours': 308.3}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=9000 EUR, events=28, offers=5, duration=308h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 11379.381899954751,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "205158",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 205158 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 6300}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 8, 'num_offers': 0, 'amount': 6300}) -> APPLICATION ISSUES FOUND: 8 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 6300, 'num_events': 8, 'num_offers': 0, 'case_duration_hours': 12.0}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=6300 EUR, events=8, offers=0, duration=12h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9937.045000027865,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "196123",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 196123 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 8000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 8000}) -> APPLICATION ISSUES FOUND: 6 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 8000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 2.2}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=8000 EUR, events=6, offers=0, duration=2h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10653.841600054875,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185743",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 185743 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 8000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 8000}) -> APPLICATION ISSUES FOUND: 3 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 8000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 65/100 (HIGH)\nFactors: amount=8000 EUR, events=3, offers=0, duration=0h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 9419.34259980917,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "203483",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 203483 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 4000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 4000}) -> APPLICATION COMPLETE: 6 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 4000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 0.1}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=4000 EUR, events=6, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 10438.413299852982,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "190270",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 190270 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 2000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 2000}) -> APPLICATION COMPLETE: 6 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 2000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 0.1}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=2000 EUR, events=6, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 13419.567100005224,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "184883",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 184883 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 3500}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 3500}) -> APPLICATION COMPLETE: 6 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 3500, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 35.9}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=3500 EUR, events=6, offers=0, duration=36h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 11146.594800055027,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "211248",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.95,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 211248 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 20, 'num_offers': 5, 'amount': 5000}) -> APPLICATION COMPLETE: 20 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5000, 'num_events': 20, 'num_offers': 5, 'case_duration_hours': 233.3}) -> RISK ASSESSMENT: Score 15/100 (LOW)\nFactors: amount=5000 EUR, events=20, offers=5, duration=233h\nRecommendation: Low risk, eligible for fast-track",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.95"
+    ],
+    "processing_time_ms": 8919.654899975285,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "204212",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 204212 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 2900}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 14, 'num_offers': 0, 'amount': 2900}) -> APPLICATION COMPLETE: 14 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 2900, 'num_events': 14, 'num_offers': 0, 'case_duration_hours': 4.5}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=2900 EUR, events=14, offers=0, duration=4h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10551.197700202465,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "209096",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 209096 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 2500}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 2500}) -> APPLICATION COMPLETE: 3 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 2500, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=2500 EUR, events=3, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 11367.481800029054,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "197375",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 197375 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 5000}) -> APPLICATION COMPLETE: 6 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 12.2}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=5000 EUR, events=6, offers=0, duration=12h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 10447.809099918231,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "198098",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 198098 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 3000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 3000}) -> APPLICATION COMPLETE: 3 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 3000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=3000 EUR, events=3, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 13113.994300132617,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "196189",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 196189 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 2000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 2000}) -> APPLICATION COMPLETE: 3 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 2000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=2000 EUR, events=3, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 10661.235800012946,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "191473",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 191473 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 10, 'num_offers': 0, 'amount': 5000}) -> APPLICATION COMPLETE: 10 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5000, 'num_events': 10, 'num_offers': 0, 'case_duration_hours': 0.4}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=5000 EUR, events=10, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 11744.311899878085,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "191851",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 191851 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 3500}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 3500}) -> APPLICATION COMPLETE: 3 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 3500, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=3500 EUR, events=3, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 10621.552099939436,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "193351",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 193351 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 3500}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 7, 'num_offers': 0, 'amount': 3500}) -> APPLICATION COMPLETE: 7 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 3500, 'num_events': 7, 'num_offers': 0, 'case_duration_hours': 13.4}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=3500 EUR, events=7, offers=0, duration=13h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 10829.323000041768,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "182677",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 182677 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 5000}) -> APPLICATION COMPLETE: 6 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 12.2}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=5000 EUR, events=6, offers=0, duration=12h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 10302.922599948943,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "191016",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 191016 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 5000}) -> APPLICATION COMPLETE: 3 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=5000 EUR, events=3, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 11373.574699973688,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "204170",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 204170 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 500.0}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 500.0}) -> APPLICATION COMPLETE: 3 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 500.0, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=500 EUR, events=3, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 11859.150600153953,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "190677",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 190677 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 2500}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 2500}) -> APPLICATION COMPLETE: 6 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 2500, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 0.5}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=2500 EUR, events=6, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 11076.016299892217,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "211640",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 211640 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 4000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 4000}) -> APPLICATION COMPLETE: 3 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 4000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=4000 EUR, events=3, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 11361.240800004452,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "193900",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 193900 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 3500}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 3500}) -> APPLICATION COMPLETE: 6 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 3500, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 11.6}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=3500 EUR, events=6, offers=0, duration=12h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 10435.926100006327,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "186412",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 186412 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 2500}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 2500}) -> APPLICATION COMPLETE: 3 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 2500, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=2500 EUR, events=3, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 10768.243100028485,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "212133",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 212133 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 1000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 1000}) -> APPLICATION COMPLETE: 3 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 1000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=1000 EUR, events=3, offers=0, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 10745.01940002665,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "181028",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 181028 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 3000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 7, 'num_offers': 0, 'amount': 3000}) -> APPLICATION COMPLETE: 7 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 3000, 'num_events': 7, 'num_offers': 0, 'case_duration_hours': 0.6}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=3000 EUR, events=7, offers=0, duration=1h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 12237.640100065619,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "179757",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 179757 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 20000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 54, 'num_offers': 8, 'amount': 20000}) -> APPLICATION ISSUES FOUND: 54 events, 8 offers.\n- Unusually high number of events \u2014 may indicate processing difficulties or rework.",
+      "[TOOL] calculate_risk_score({'amount': 20000, 'num_events': 54, 'num_offers': 8, 'case_duration_hours': 1119.5}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=20000 EUR, events=54, offers=8, duration=1120h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 11083.73640011996,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "200865",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 200865 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 7800}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 21, 'num_offers': 4, 'amount': 7800}) -> APPLICATION COMPLETE: 21 events recorded, 4 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 7800, 'num_events': 21, 'num_offers': 4, 'case_duration_hours': 215.4}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=7800 EUR, events=21, offers=4, duration=215h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10865.669400198385,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "181106",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 181106 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 7100}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 10, 'num_offers': 0, 'amount': 7100}) -> APPLICATION ISSUES FOUND: 10 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 7100, 'num_events': 10, 'num_offers': 0, 'case_duration_hours': 1.4}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=7100 EUR, events=10, offers=0, duration=1h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9052.133900113404,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "183064",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 183064 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 10000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 37, 'num_offers': 5, 'amount': 10000}) -> APPLICATION COMPLETE: 37 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 10000, 'num_events': 37, 'num_offers': 5, 'case_duration_hours': 429.2}) -> RISK ASSESSMENT: Score 40/100 (MEDIUM)\nFactors: amount=10000 EUR, events=37, offers=5, duration=429h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9093.25799997896,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "205433",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 205433 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 25000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 28, 'num_offers': 8, 'amount': 25000}) -> APPLICATION COMPLETE: 28 events recorded, 8 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 25000, 'num_events': 28, 'num_offers': 8, 'case_duration_hours': 325.8}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=25000 EUR, events=28, offers=8, duration=326h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9486.342699965462,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "208049",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 208049 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 8000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 34, 'num_offers': 4, 'amount': 8000}) -> APPLICATION COMPLETE: 34 events recorded, 4 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 8000, 'num_events': 34, 'num_offers': 4, 'case_duration_hours': 434.2}) -> RISK ASSESSMENT: Score 40/100 (MEDIUM)\nFactors: amount=8000 EUR, events=34, offers=4, duration=434h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10534.444099990651,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "184291",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 184291 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 14000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 19, 'num_offers': 0, 'amount': 14000}) -> APPLICATION ISSUES FOUND: 19 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 14000, 'num_events': 19, 'num_offers': 0, 'case_duration_hours': 93.5}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=14000 EUR, events=19, offers=0, duration=94h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9847.960900049657,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "213474",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 213474 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 12000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 26, 'num_offers': 3, 'amount': 12000}) -> APPLICATION COMPLETE: 26 events recorded, 3 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 12000, 'num_events': 26, 'num_offers': 3, 'case_duration_hours': 239.9}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=12000 EUR, events=26, offers=3, duration=240h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9640.963200014085,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "211940",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 211940 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 17000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 26, 'num_offers': 3, 'amount': 17000}) -> APPLICATION COMPLETE: 26 events recorded, 3 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 17000, 'num_events': 26, 'num_offers': 3, 'case_duration_hours': 360.2}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=17000 EUR, events=26, offers=3, duration=360h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10411.597800208256,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "175591",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 175591 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 6000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 34, 'num_offers': 4, 'amount': 6000}) -> APPLICATION COMPLETE: 34 events recorded, 4 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 6000, 'num_events': 34, 'num_offers': 4, 'case_duration_hours': 499.6}) -> RISK ASSESSMENT: Score 40/100 (MEDIUM)\nFactors: amount=6000 EUR, events=34, offers=4, duration=500h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10603.119800100103,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "200176",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 200176 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 6400}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 28, 'num_offers': 4, 'amount': 6400}) -> APPLICATION COMPLETE: 28 events recorded, 4 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 6400, 'num_events': 28, 'num_offers': 4, 'case_duration_hours': 511.5}) -> RISK ASSESSMENT: Score 40/100 (MEDIUM)\nFactors: amount=6400 EUR, events=28, offers=4, duration=512h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10352.118500042707,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "175744",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 175744 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 15000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 43, 'num_offers': 0, 'amount': 15000}) -> APPLICATION ISSUES FOUND: 43 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 15000, 'num_events': 43, 'num_offers': 0, 'case_duration_hours': 737.6}) -> RISK ASSESSMENT: Score 65/100 (HIGH)\nFactors: amount=15000 EUR, events=43, offers=0, duration=738h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 10504.559300141409,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "210926",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 210926 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 10000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 23, 'num_offers': 0, 'amount': 10000}) -> APPLICATION ISSUES FOUND: 23 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 10000, 'num_events': 23, 'num_offers': 0, 'case_duration_hours': 69.3}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=10000 EUR, events=23, offers=0, duration=69h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9398.171100066975,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "175120",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 175120 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 10000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 26, 'num_offers': 0, 'amount': 10000}) -> APPLICATION ISSUES FOUND: 26 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 10000, 'num_events': 26, 'num_offers': 0, 'case_duration_hours': 735.6}) -> RISK ASSESSMENT: Score 60/100 (MEDIUM)\nFactors: amount=10000 EUR, events=26, offers=0, duration=736h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10306.92350002937,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "197081",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 197081 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 15000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 21, 'num_offers': 0, 'amount': 15000}) -> APPLICATION ISSUES FOUND: 21 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 15000, 'num_events': 21, 'num_offers': 0, 'case_duration_hours': 741.4}) -> RISK ASSESSMENT: Score 60/100 (MEDIUM)\nFactors: amount=15000 EUR, events=21, offers=0, duration=741h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10580.220700008795,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "195208",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 195208 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 11500}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 14, 'num_offers': 0, 'amount': 11500}) -> APPLICATION ISSUES FOUND: 14 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 11500, 'num_events': 14, 'num_offers': 0, 'case_duration_hours': 734.0}) -> RISK ASSESSMENT: Score 60/100 (MEDIUM)\nFactors: amount=11500 EUR, events=14, offers=0, duration=734h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10326.695299940184,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "204299",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 204299 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 10000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 26, 'num_offers': 5, 'amount': 10000}) -> APPLICATION COMPLETE: 26 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 10000, 'num_events': 26, 'num_offers': 5, 'case_duration_hours': 330.2}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=10000 EUR, events=26, offers=5, duration=330h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10485.742699820548,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "193828",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 193828 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 15000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 28, 'num_offers': 5, 'amount': 15000}) -> APPLICATION COMPLETE: 28 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 15000, 'num_events': 28, 'num_offers': 5, 'case_duration_hours': 280.7}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=15000 EUR, events=28, offers=5, duration=281h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10316.067799925804,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "202701",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 202701 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 15000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 66, 'num_offers': 10, 'amount': 15000}) -> APPLICATION ISSUES FOUND: 66 events, 10 offers.\n- Unusually high number of events \u2014 may indicate processing difficulties or rework.",
+      "[TOOL] calculate_risk_score({'amount': 15000, 'num_events': 66, 'num_offers': 10, 'case_duration_hours': 595.0}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=15000 EUR, events=66, offers=10, duration=595h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 10716.453900095075,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "186151",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 186151 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 15000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 49, 'num_offers': 5, 'amount': 15000}) -> APPLICATION COMPLETE: 49 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 15000, 'num_events': 49, 'num_offers': 5, 'case_duration_hours': 201.7}) -> RISK ASSESSMENT: Score 40/100 (MEDIUM)\nFactors: amount=15000 EUR, events=49, offers=5, duration=202h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10816.654900088906,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185461",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 185461 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5500}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 22, 'num_offers': 5, 'amount': 5500}) -> APPLICATION COMPLETE: 22 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5500, 'num_events': 22, 'num_offers': 5, 'case_duration_hours': 0.2}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=5500 EUR, events=22, offers=5, duration=0h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9728.469700086862,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "212632",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 212632 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 15000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 30, 'num_offers': 5, 'amount': 15000}) -> APPLICATION COMPLETE: 30 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 15000, 'num_events': 30, 'num_offers': 5, 'case_duration_hours': 324.7}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=15000 EUR, events=30, offers=5, duration=325h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10755.863899830729,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185674",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 185674 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 15000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 37, 'num_offers': 9, 'amount': 15000}) -> APPLICATION COMPLETE: 37 events recorded, 9 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 15000, 'num_events': 37, 'num_offers': 9, 'case_duration_hours': 329.6}) -> RISK ASSESSMENT: Score 40/100 (MEDIUM)\nFactors: amount=15000 EUR, events=37, offers=9, duration=330h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9831.395799992606,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "179465",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 179465 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 10000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 35, 'num_offers': 9, 'amount': 10000}) -> APPLICATION COMPLETE: 35 events recorded, 9 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 10000, 'num_events': 35, 'num_offers': 9, 'case_duration_hours': 209.9}) -> RISK ASSESSMENT: Score 40/100 (MEDIUM)\nFactors: amount=10000 EUR, events=35, offers=9, duration=210h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10099.823500029743,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "184865",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 184865 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 13350}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 31, 'num_offers': 9, 'amount': 13350}) -> APPLICATION COMPLETE: 31 events recorded, 9 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 13350, 'num_events': 31, 'num_offers': 9, 'case_duration_hours': 231.2}) -> RISK ASSESSMENT: Score 40/100 (MEDIUM)\nFactors: amount=13350 EUR, events=31, offers=9, duration=231h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10680.465900106356,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "174968",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 174968 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 12750.0}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 45, 'num_offers': 5, 'amount': 12750.0}) -> APPLICATION COMPLETE: 45 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 12750.0, 'num_events': 45, 'num_offers': 5, 'case_duration_hours': 302.2}) -> RISK ASSESSMENT: Score 40/100 (MEDIUM)\nFactors: amount=12750 EUR, events=45, offers=5, duration=302h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 9853.736199904233,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "190008",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 190008 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 16500}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 57, 'num_offers': 5, 'amount': 16500}) -> APPLICATION ISSUES FOUND: 57 events, 5 offers.\n- Unusually high number of events \u2014 may indicate processing difficulties or rework.",
+      "[TOOL] calculate_risk_score({'amount': 16500, 'num_events': 57, 'num_offers': 5, 'case_duration_hours': 727.7}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=16500 EUR, events=57, offers=5, duration=728h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 11188.608299940825,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "197533",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 197533 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 6000}) -> POLICY: Standard personal loan. Requires income verification and credit check. Offer must be created and sent to applicant. Applicant must accept offer before approval. Processing time: 5-15 business ",
+      "[TOOL] check_application_completeness({'num_events': 44, 'num_offers': 13, 'amount': 6000}) -> APPLICATION COMPLETE: 44 events recorded, 13 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 6000, 'num_events': 44, 'num_offers': 13, 'case_duration_hours': 25.5}) -> RISK ASSESSMENT: Score 40/100 (MEDIUM)\nFactors: amount=6000 EUR, events=44, offers=13, duration=26h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.85"
+    ],
+    "processing_time_ms": 11196.4910000097,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "187256",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.95,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 187256 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 35000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 35000}) -> APPLICATION ISSUES FOUND: 3 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 35000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 80/100 (HIGH)\nFactors: amount=35000 EUR, events=3, offers=0, duration=0h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.95"
+    ],
+    "processing_time_ms": 11184.13389986381,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "203919",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.95,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 203919 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 50000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 50000}) -> APPLICATION ISSUES FOUND: 3 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 50000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 80/100 (HIGH)\nFactors: amount=50000 EUR, events=3, offers=0, duration=0h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.95"
+    ],
+    "processing_time_ms": 10447.882400127128,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185993",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 185993 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 35000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 35000}) -> APPLICATION ISSUES FOUND: 6 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 35000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 0.1}) -> RISK ASSESSMENT: Score 70/100 (HIGH)\nFactors: amount=35000 EUR, events=6, offers=0, duration=0h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 11471.290400018916,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "189124",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.9,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 189124 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 37000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 3, 'num_offers': 0, 'amount': 37000}) -> APPLICATION ISSUES FOUND: 3 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 37000, 'num_events': 3, 'num_offers': 0, 'case_duration_hours': 0.0}) -> RISK ASSESSMENT: Score 80/100 (HIGH)\nFactors: amount=37000 EUR, events=3, offers=0, duration=0h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.9"
+    ],
+    "processing_time_ms": 10639.928799821064,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "201069",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 201069 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 50000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 6, 'num_offers': 0, 'amount': 50000}) -> APPLICATION ISSUES FOUND: 6 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 50000, 'num_events': 6, 'num_offers': 0, 'case_duration_hours': 18.6}) -> RISK ASSESSMENT: Score 70/100 (HIGH)\nFactors: amount=50000 EUR, events=6, offers=0, duration=19h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 11249.926800141111,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "213846",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 213846 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 50000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 35, 'num_offers': 0, 'amount': 50000}) -> APPLICATION ISSUES FOUND: 35 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 50000, 'num_events': 35, 'num_offers': 0, 'case_duration_hours': 46.8}) -> RISK ASSESSMENT: Score 75/100 (HIGH)\nFactors: amount=50000 EUR, events=35, offers=0, duration=47h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 11692.310499958694,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "214064",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.95,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 214064 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 14, 'num_offers': 3, 'amount': 5000}) -> APPLICATION COMPLETE: 14 events recorded, 3 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5000, 'num_events': 14, 'num_offers': 3, 'case_duration_hours': 121.7}) -> RISK ASSESSMENT: Score 15/100 (LOW)\nFactors: amount=5000 EUR, events=14, offers=3, duration=122h\nRecommendation: Low risk, eligible for fast-track",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.95"
+    ],
+    "processing_time_ms": 8718.949500005692,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "184487",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 184487 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 1000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 35, 'num_offers': 0, 'amount': 1000}) -> APPLICATION COMPLETE: 35 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 1000, 'num_events': 35, 'num_offers': 0, 'case_duration_hours': 741.3}) -> RISK ASSESSMENT: Score 45/100 (MEDIUM)\nFactors: amount=1000 EUR, events=35, offers=0, duration=741h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 11083.548699971288,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "212689",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.95,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 212689 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 2000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 38, 'num_offers': 4, 'amount': 2000}) -> APPLICATION COMPLETE: 38 events recorded, 4 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 2000, 'num_events': 38, 'num_offers': 4, 'case_duration_hours': 436.6}) -> RISK ASSESSMENT: Score 20/100 (LOW)\nFactors: amount=2000 EUR, events=38, offers=4, duration=437h\nRecommendation: Low risk, eligible for fast-track",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.95"
+    ],
+    "processing_time_ms": 9601.952099939808,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "190597",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.8,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 190597 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 10, 'num_offers': 0, 'amount': 5000}) -> APPLICATION COMPLETE: 10 events recorded, 0 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5000, 'num_events': 10, 'num_offers': 0, 'case_duration_hours': 13.7}) -> RISK ASSESSMENT: Score 35/100 (MEDIUM)\nFactors: amount=5000 EUR, events=10, offers=0, duration=14h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.8"
+    ],
+    "processing_time_ms": 10795.492199948058,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "212698",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.95,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 212698 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 24, 'num_offers': 5, 'amount': 5000}) -> APPLICATION COMPLETE: 24 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5000, 'num_events': 24, 'num_offers': 5, 'case_duration_hours': 144.0}) -> RISK ASSESSMENT: Score 15/100 (LOW)\nFactors: amount=5000 EUR, events=24, offers=5, duration=144h\nRecommendation: Low risk, eligible for fast-track",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.95"
+    ],
+    "processing_time_ms": 10154.201800003648,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "212449",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 212449 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 50000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 26, 'num_offers': 0, 'amount': 50000}) -> APPLICATION ISSUES FOUND: 26 events, 0 offers.\n- No offers generated for a non-trivial loan \u2014 offer stage may have been skipped.",
+      "[TOOL] calculate_risk_score({'amount': 50000, 'num_events': 26, 'num_offers': 0, 'case_duration_hours': 265.5}) -> RISK ASSESSMENT: Score 70/100 (HIGH)\nFactors: amount=50000 EUR, events=26, offers=0, duration=266h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 10659.273199969903,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "181016",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.75,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 181016 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 35000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 32, 'num_offers': 8, 'amount': 35000}) -> APPLICATION COMPLETE: 32 events recorded, 8 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 35000, 'num_events': 32, 'num_offers': 8, 'case_duration_hours': 738.2}) -> RISK ASSESSMENT: Score 60/100 (MEDIUM)\nFactors: amount=35000 EUR, events=32, offers=8, duration=738h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.75"
+    ],
+    "processing_time_ms": 12608.991699991748,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "201854",
+    "mode": "agentic",
+    "decision": "declined",
+    "confidence": 0.85,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 201854 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 50000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 99, 'num_offers': 5, 'amount': 50000}) -> APPLICATION ISSUES FOUND: 99 events, 5 offers.\n- Unusually high number of events \u2014 may indicate processing difficulties or rework.",
+      "[TOOL] calculate_risk_score({'amount': 50000, 'num_events': 99, 'num_offers': 5, 'case_duration_hours': 1357.3}) -> RISK ASSESSMENT: Score 70/100 (HIGH)\nFactors: amount=50000 EUR, events=99, offers=5, duration=1357h\nRecommendation: Proceed with caution",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: declined, Confidence: 0.85"
+    ],
+    "processing_time_ms": 11167.756400071084,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "190504",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.75,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 190504 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 46000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 31, 'num_offers': 8, 'amount': 46000}) -> APPLICATION COMPLETE: 31 events recorded, 8 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 46000, 'num_events': 31, 'num_offers': 8, 'case_duration_hours': 191.2}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=46000 EUR, events=31, offers=8, duration=191h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.75"
+    ],
+    "processing_time_ms": 11870.81340001896,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "176840",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.75,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 176840 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 50000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 50, 'num_offers': 10, 'amount': 50000}) -> APPLICATION COMPLETE: 50 events recorded, 10 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 50000, 'num_events': 50, 'num_offers': 10, 'case_duration_hours': 759.9}) -> RISK ASSESSMENT: Score 60/100 (MEDIUM)\nFactors: amount=50000 EUR, events=50, offers=10, duration=760h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.75"
+    ],
+    "processing_time_ms": 12494.277500081807,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "185972",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.75,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 185972 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 35000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 30, 'num_offers': 5, 'amount': 35000}) -> APPLICATION COMPLETE: 30 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 35000, 'num_events': 30, 'num_offers': 5, 'case_duration_hours': 185.4}) -> RISK ASSESSMENT: Score 50/100 (MEDIUM)\nFactors: amount=35000 EUR, events=30, offers=5, duration=185h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.75"
+    ],
+    "processing_time_ms": 12030.840799910948,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "182689",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.75,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 182689 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 26000}) -> POLICY: High-value personal loan. Requires comprehensive financial review. Senior credit officer must review. Collateral assessment may be required. Multiple offers may be generated for comparison. Pr",
+      "[TOOL] check_application_completeness({'num_events': 31, 'num_offers': 9, 'amount': 26000}) -> APPLICATION COMPLETE: 31 events recorded, 9 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 26000, 'num_events': 31, 'num_offers': 9, 'case_duration_hours': 250.2}) -> RISK ASSESSMENT: Score 55/100 (MEDIUM)\nFactors: amount=26000 EUR, events=31, offers=9, duration=250h\nRecommendation: Standard processing",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.75"
+    ],
+    "processing_time_ms": 10906.719699967653,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "176488",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.95,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 176488 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 47, 'num_offers': 10, 'amount': 5000}) -> APPLICATION COMPLETE: 47 events recorded, 10 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5000, 'num_events': 47, 'num_offers': 10, 'case_duration_hours': 284.4}) -> RISK ASSESSMENT: Score 20/100 (LOW)\nFactors: amount=5000 EUR, events=47, offers=10, duration=284h\nRecommendation: Low risk, eligible for fast-track",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.95"
+    ],
+    "processing_time_ms": 9003.948800032958,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "210401",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.95,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 210401 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 46, 'num_offers': 13, 'amount': 5000}) -> APPLICATION COMPLETE: 46 events recorded, 13 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5000, 'num_events': 46, 'num_offers': 13, 'case_duration_hours': 571.6}) -> RISK ASSESSMENT: Score 25/100 (LOW)\nFactors: amount=5000 EUR, events=46, offers=13, duration=572h\nRecommendation: Low risk, eligible for fast-track",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.95"
+    ],
+    "processing_time_ms": 8752.067800145596,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "180574",
+    "mode": "agentic",
+    "decision": "approved",
+    "confidence": 0.95,
+    "num_steps": 4,
+    "steps_taken": [
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "tool_call",
+        "tools": [
+          "lookup_credit_policy",
+          "check_application_completeness",
+          "calculate_risk_score"
+        ]
+      },
+      {
+        "step": "assess",
+        "node": "assess_application"
+      },
+      {
+        "step": "decision",
+        "node": "make_decision"
+      }
+    ],
+    "reasoning_trace": [
+      "[ASSESS] Sent case 180574 to LLM for evaluation",
+      "[TOOL] lookup_credit_policy({'amount': 5000}) -> POLICY: Small personal loan. Auto-approval eligible. Minimal documentation required. Standard interest rate applies. No collateral needed.",
+      "[TOOL] check_application_completeness({'num_events': 26, 'num_offers': 5, 'amount': 5000}) -> APPLICATION COMPLETE: 26 events recorded, 5 offers generated. Application appears well-processed.",
+      "[TOOL] calculate_risk_score({'amount': 5000, 'num_events': 26, 'num_offers': 5, 'case_duration_hours': 231.4}) -> RISK ASSESSMENT: Score 15/100 (LOW)\nFactors: amount=5000 EUR, events=26, offers=5, duration=231h\nRecommendation: Low risk, eligible for fast-track",
+      "[ASSESS] LLM processing tool results (step 3)",
+      "[DECIDE] Decision: approved, Confidence: 0.95"
+    ],
+    "processing_time_ms": 8866.165399784222,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  }
+]

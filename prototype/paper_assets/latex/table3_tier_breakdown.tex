@@ -1,0 +1,15 @@
+\begin{table}[h]
+\centering
+\caption{Accuracy by Autonomy Tier}
+\label{tab:tier_breakdown}
+\small
+\begin{tabular}{lcccc}
+\hline
+\textbf{Autonomy Tier} & \textbf{N} & \textbf{Rule-Based} & \textbf{Agentic} & \textbf{Governed} \\
+\hline
+Full Auto (no HITL) & 29 & 3/29 (10%) & 22/29 (76%) & 22/29 (76%) \\
+Supervised (HITL at decision) & 59 & 37/59 (63%) & 37/59 (63%) & 59/59 (100%) \\
+Restricted (HITL at every step) & 13 & 9/13 (69%) & 9/13 (69%) & 13/13 (100%) \\
+\hline
+\end{tabular}
+\end{table}
