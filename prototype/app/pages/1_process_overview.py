@@ -9,27 +9,26 @@ import plotly.express as px
 
 st.set_page_config(page_title="Process Overview", layout="wide")
 st.title("Process Overview")
-st.markdown("Explore the BPI Challenge 2012 loan application dataset.")
+
+results_dir, sample_dir, ds_info = path_setup.get_dataset_selector()
+st.markdown(f"Exploring **{ds_info['domain']}** dataset: {ds_info['description']}")
 
 
 @st.cache_data
-def load_data():
+def load_data(sample_path: str):
     try:
-        sample_dir = path_setup.SAMPLE_DIR
-        cases = pd.read_parquet(sample_dir / "sample_cases.parquet")
-        events = pd.read_parquet(sample_dir / "sample_events.parquet")
+        sp = Path(sample_path)
+        cases = pd.read_parquet(sp / "sample_cases.parquet")
+        events = pd.read_parquet(sp / "sample_events.parquet")
         return cases, events
     except FileNotFoundError:
         return None, None
 
 
-cases_df, events_df = load_data()
+cases_df, events_df = load_data(str(sample_dir))
 
 if cases_df is None:
-    st.warning(
-        "No data found. Download the BPI 2012 dataset and run:\n\n"
-        "```\ncd prototype\npython -m src.data.preprocessor\n```"
-    )
+    st.warning("No data found. Run the preprocessor for this dataset first.")
     st.stop()
 
 # Summary metrics
@@ -37,7 +36,7 @@ st.subheader("Dataset Summary")
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Total Cases", len(cases_df))
 col2.metric("Total Events", len(events_df) if events_df is not None else "N/A")
-col3.metric("Avg Amount", f"EUR {cases_df['amount_requested'].mean():,.0f}")
+col3.metric("Avg Amount/Age", f"{cases_df['amount_requested'].mean():,.0f}")
 col4.metric("Avg Duration", f"{cases_df['case_duration_hours'].mean():,.0f}h")
 
 st.divider()
@@ -64,16 +63,16 @@ with col_right:
 # Amount distribution
 fig_amount = px.histogram(
     cases_df, x="amount_requested", color="outcome",
-    title="Loan Amount Distribution by Outcome",
+    title="Distribution by Outcome",
     nbins=30, barmode="overlay", opacity=0.7,
 )
 st.plotly_chart(fig_amount, width="stretch")
 
 # Case table
 st.subheader("Case Table")
+display_cols = [c for c in ["case_id", "amount_requested", "risk_tier", "outcome", "num_events", "num_offers", "case_duration_hours"] if c in cases_df.columns]
 st.dataframe(
-    cases_df[["case_id", "amount_requested", "risk_tier", "outcome", "num_events", "num_offers", "case_duration_hours"]]
-    .sort_values("amount_requested", ascending=False),
+    cases_df[display_cols].sort_values("amount_requested", ascending=False),
     width="stretch",
     height=400,
 )

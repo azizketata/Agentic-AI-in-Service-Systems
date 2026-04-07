@@ -52,5 +52,6 @@ build/
 # Prototype - large data files
 prototype/data/raw/
 prototype/data/processed/
+prototype/data/processed_sepsis/
 
-.CLAUDE.md
+prototype/CLAUDE.md

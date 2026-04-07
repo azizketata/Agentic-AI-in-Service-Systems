@@ -11,20 +11,19 @@ from components.trace_viewer import render_trace
 
 st.set_page_config(page_title="Trace Analysis", layout="wide")
 st.title("Qualitative Trace Analysis")
-st.markdown("Categorize agent failures, evaluate guardrail effectiveness, and generate paper examples.")
+
+results_dir, sample_dir, ds_info = path_setup.get_dataset_selector()
+st.markdown(f"Analyzing **{ds_info['domain']}** dataset failures and governance effectiveness.")
 
 
 @st.cache_data
-def load_analysis():
+def load_analysis(rdir: str, sdir: str):
     from src.evaluation.trace_analysis import run_full_trace_analysis
-    return run_full_trace_analysis(
-        path_setup.RESULTS_DIR,
-        path_setup.SAMPLE_DIR,
-    )
+    return run_full_trace_analysis(Path(rdir), Path(sdir))
 
 
 try:
-    analysis = load_analysis()
+    analysis = load_analysis(str(results_dir), str(sample_dir))
 except Exception as e:
     st.error(f"Could not load analysis: {e}")
     st.stop()

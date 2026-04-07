@@ -20,6 +20,55 @@ for p in [str(_prototype_root), str(_app_dir)]:
 PROTOTYPE_ROOT = _prototype_root
 APP_DIR = _app_dir
 DATA_DIR = _prototype_root / "data"
+CONFIG_DIR = _prototype_root / "config"
+
+# Dataset configurations
+DATASETS = {
+    "BPI 2012 — Loan Applications": {
+        "key": "bpi2012",
+        "domain": "Financial Services",
+        "results_dir": DATA_DIR / "results",
+        "sample_dir": DATA_DIR / "sample",
+        "outcomes": ["approved", "declined", "cancelled"],
+        "description": "13,087 loan applications from a Dutch bank",
+    },
+    "Sepsis Cases — Healthcare": {
+        "key": "sepsis",
+        "domain": "Healthcare",
+        "results_dir": DATA_DIR / "results_sepsis",
+        "sample_dir": DATA_DIR / "sample_sepsis",
+        "outcomes": ["discharged", "returned"],
+        "description": "1,050 sepsis patient pathways from a hospital",
+    },
+}
+
+# Default (backwards compatible)
 RESULTS_DIR = DATA_DIR / "results"
 SAMPLE_DIR = DATA_DIR / "sample"
-CONFIG_DIR = _prototype_root / "config"
+
+
+def get_dataset_selector():
+    """Render dataset selector in sidebar and return (results_dir, sample_dir, dataset_info)."""
+    import streamlit as st
+
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("Dataset")
+    dataset_name = st.sidebar.selectbox(
+        "Select dataset",
+        options=list(DATASETS.keys()),
+        key="dataset_selector",
+    )
+    ds = DATASETS[dataset_name]
+
+    # Check if data exists
+    sample_exists = (ds["sample_dir"] / "sample_cases.parquet").exists()
+    results_exist = (ds["results_dir"] / "rule_based_results.json").exists()
+
+    if not sample_exists:
+        st.sidebar.warning(f"Sample data not found for {dataset_name}")
+    if not results_exist:
+        st.sidebar.warning(f"Pipeline results not found for {dataset_name}")
+
+    st.sidebar.caption(ds["description"])
+
+    return ds["results_dir"], ds["sample_dir"], ds

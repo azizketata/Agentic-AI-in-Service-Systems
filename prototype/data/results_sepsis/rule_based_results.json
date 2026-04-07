@@ -1,0 +1,4367 @@
+[
+  {
+    "case_id": "DP",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "OIA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 70.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "YB",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "DGA",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 90.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 10,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "QJ",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "BBA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 6,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "DR",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 75.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "PS",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 90.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 3,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "GP",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 70.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 3,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "RS",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 70.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 3,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "UA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 4,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "CY",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 70.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 22,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "KHA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 90.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 3,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "ZM",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 20,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "EKA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "TKA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 70.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 6,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "ALA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 75.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 4,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "UGA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 75.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 8,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "VS",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 70.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 8,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "GM",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 90.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "YP",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 90.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 21,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "HGA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 75.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 9,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "KC",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 75.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 6,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "ZX",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 3,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "GEA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 70.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "XEA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 65.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "MV",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 8,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "NK",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 11,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "JU",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 8,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "EY",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "IL",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 90.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 6,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "QP",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 90.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 9,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "OB",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 9,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "VP",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "QMA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 70.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 10,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "PJ",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 12,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "VF",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "SB",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "OL",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 70.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": false,
+        "passed": false
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 6,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 FAIL",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "BX",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 75.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 9,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "JW",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "TW",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 13,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "YT",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 8,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "JCA",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 90.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 10,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "HL",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 60.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "CF",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 20,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "WN",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 15,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "XJ",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 90.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "BT",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 75.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "VG",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 10,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "IGA",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 75.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "OM",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 10,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "OLA",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 75.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 4,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "SJA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 60.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "BA",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 75.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "JO",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 3,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "ZDA",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 9,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "OK",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 65.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 11,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "LU",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "S",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 60.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 9,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "GCA",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 6,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 3,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 3 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "L",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "MKA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 35.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 43,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "HP",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 65.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 0,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 0 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "KBA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 25.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "HF",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 45.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "YH",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 70.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 2,
+        "passed": false
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 FAIL",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "KIA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 55.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 6,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "BW",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 50.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 12,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "NO",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 35.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "CX",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 50.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "KKA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 55.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 6,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "HO",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 50.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 18,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "IZ",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 85.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 2,
+        "passed": false
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 FAIL",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "EF",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 45.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 7,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "GFA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 25.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 3,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "FEA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 20.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 3,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "H",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 6,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "ZD",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 90.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 2,
+        "passed": false
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 FAIL",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "WDA",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "WU",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "A",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "T",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "BM",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "NGA",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 1,
+        "passed": false
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 174,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 4,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 FAIL",
+      "Decision: returned \u2014 4 risk factors present: predicting ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "GX",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "EHA",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "AAA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 60.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 3,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 1,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 1 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "BMA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 55.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 4,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "PG",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 55.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "FW",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 40.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 11,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "RG",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 80.0,
+        "passed": false
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 27,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 FAIL",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "ZKA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 35.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 8,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "MIA",
+    "mode": "rule_based",
+    "decision": "discharged",
+    "confidence": 1.0,
+    "num_steps": 5,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 0,
+        "passed": true
+      },
+      {
+        "step": "age_check",
+        "value": 55.0,
+        "passed": true
+      },
+      {
+        "step": "treatment_check",
+        "adequate": true,
+        "passed": true
+      },
+      {
+        "step": "lab_monitoring",
+        "count": 5,
+        "passed": true
+      },
+      {
+        "step": "risk_assessment",
+        "risk_factors": 2,
+        "passed": true
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 PASS",
+      "Rule: age_check \u2014 PASS",
+      "Rule: treatment_check \u2014 PASS",
+      "Rule: lab_monitoring \u2014 PASS",
+      "Rule: risk_assessment \u2014 PASS",
+      "Decision: discharged \u2014 Only 2 risk factors: predicting successful discharge"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": false
+  },
+  {
+    "case_id": "OR",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "MS",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "MN",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "TV",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  },
+  {
+    "case_id": "EM",
+    "mode": "rule_based",
+    "decision": "returned",
+    "confidence": 1.0,
+    "num_steps": 1,
+    "steps_taken": [
+      {
+        "step": "critical_flags",
+        "value": 2,
+        "passed": false
+      }
+    ],
+    "reasoning_trace": [
+      "Rule: critical_flags \u2014 FAIL",
+      "Decision: returned \u2014 Multiple critical flags (2): high risk of ER return"
+    ],
+    "processing_time_ms": 0,
+    "governance_events": [],
+    "human_interventions": 0,
+    "contract_violations": 0,
+    "correct": true
+  }
+]
