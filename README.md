@@ -31,7 +31,7 @@ This prototype addresses that gap by implementing and evaluating **four design p
 | Metric | Rule-Based | Agentic | Governed |
 |---|---|---|---|
 | **Loan Processing** (BPI 2012, N=101) | 48.5% | 67.3% | **93.1%** |
-| **Sepsis Triage** (Sepsis Cases, N=99) | — | — | — |
+| **Sepsis Triage** (Sepsis Cases, N=99) | 72.7% | 57.6% | **92.9%** |
 
 ### The Deskilling Paradox — Made Concrete
 
@@ -39,12 +39,16 @@ This prototype addresses that gap by implementing and evaluating **four design p
 - **31 of 33 errors** (94%) had confidence >= 80%
 - The agent **never predicts "cancelled"** (customer withdrawal) — an entire outcome category is a systematic blind spot invisible without procedural knowledge
 
-### The Governance-Efficiency Tradeoff
+### The Governance-Efficiency Tradeoff (consistent across both domains)
 
-- **Supervised tier (HITL at final decision): 100% accuracy** — every error caught
-- **Restricted tier (HITL at every step): 100% accuracy** — every error caught
-- **Full-auto tier (no HITL): 76% accuracy** — 7 errors slip through
-- **All governed errors occur exclusively in the full-auto tier** — governance works exactly where it is applied
+| Autonomy Tier | Loans (Governed) | Sepsis (Governed) |
+|---|---|---|
+| **Supervised** (HITL at decision) | **100%** | **100%** |
+| **Restricted** (HITL at every step) | **100%** | **100%** |
+| **Full Auto** (no HITL) | 76% | 71% |
+| Governed errors | 7 (all full-auto) | 7 (all full-auto) |
+
+Governance achieves perfect accuracy where HITL is active — in both financial services and healthcare. All errors in both domains occur exclusively in the full-auto tier.
 
 ### Guardrail Effectiveness
 
@@ -209,20 +213,6 @@ prototype/
 ├── generate_paper_assets.py       # Paper tables, figures, LaTeX, statistics
 └── paper_assets/                  # Generated tables, figures, key statistics
 ```
-
----
-
-## Paper Assets
-
-Run `python generate_paper_assets.py` to produce:
-
-| Output | Description |
-|---|---|
-| `paper_assets/tables/` | 6 CSV tables (dataset overview, mode comparison, tier breakdown, failure analysis, design principles, case examples) |
-| `paper_assets/figures/` | 4 interactive Plotly charts (radar, tier accuracy, failure types, confidence distribution) |
-| `paper_assets/latex/` | LaTeX-ready table code for direct inclusion in Overleaf |
-| `paper_assets/key_statistics.md` | All paper claims with exact numbers, copy-paste ready |
-| `paper_assets/paper_examples.md` | 5 narrative case examples for the Results section |
 
 ---
 
