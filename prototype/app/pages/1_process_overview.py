@@ -1,10 +1,7 @@
 """Page 1: Process Overview — Case table, distributions, event timeline."""
 
-import sys
 from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))  # prototype root
-sys.path.insert(0, str(Path(__file__).parent.parent))         # app dir
+import sys; sys.path.insert(0, str(Path(__file__).parent.parent)); import path_setup
 
 import streamlit as st
 import pandas as pd
@@ -18,7 +15,7 @@ st.markdown("Explore the BPI Challenge 2012 loan application dataset.")
 @st.cache_data
 def load_data():
     try:
-        sample_dir = Path(__file__).parent.parent.parent / "data" / "sample"
+        sample_dir = path_setup.SAMPLE_DIR
         cases = pd.read_parquet(sample_dir / "sample_cases.parquet")
         events = pd.read_parquet(sample_dir / "sample_events.parquet")
         return cases, events

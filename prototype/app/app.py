@@ -4,11 +4,8 @@ Streamlit Dashboard — Entry Point
 Governable Agentic Service Systems Prototype
 """
 
-import sys
 from pathlib import Path
-
-# Add prototype root to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent))
+import path_setup
 
 import streamlit as st
 

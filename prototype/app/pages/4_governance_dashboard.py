@@ -1,10 +1,7 @@
 """Page 4: Governance Dashboard — Violations, overrides, escalations, audit log."""
 
-import sys
 from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))  # prototype root
-sys.path.insert(0, str(Path(__file__).parent.parent))         # app dir
+import sys; sys.path.insert(0, str(Path(__file__).parent.parent)); import path_setup
 
 import streamlit as st
 import pandas as pd
@@ -44,7 +41,7 @@ with col_left:
 
     # Try to load from sample cases
     try:
-        sample_dir = Path(__file__).parent.parent.parent / "data" / "sample"
+        sample_dir = path_setup.SAMPLE_DIR
         cases_df = pd.read_parquet(sample_dir / "sample_cases.parquet")
 
         from src.governance.autonomy_tiers import classify_autonomy_tier

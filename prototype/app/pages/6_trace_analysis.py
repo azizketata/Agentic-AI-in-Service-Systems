@@ -1,10 +1,7 @@
 """Page 6: Qualitative Trace Analysis — Failure categorization, guardrail effectiveness, paper examples."""
 
-import sys
 from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))  # prototype root
-sys.path.insert(0, str(Path(__file__).parent.parent))         # app dir
+import sys; sys.path.insert(0, str(Path(__file__).parent.parent)); import path_setup
 
 import streamlit as st
 import pandas as pd
@@ -21,8 +18,8 @@ st.markdown("Categorize agent failures, evaluate guardrail effectiveness, and ge
 def load_analysis():
     from src.evaluation.trace_analysis import run_full_trace_analysis
     return run_full_trace_analysis(
-        Path(__file__).parent.parent.parent / "data" / "results",
-        Path(__file__).parent.parent.parent / "data" / "sample",
+        path_setup.RESULTS_DIR,
+        path_setup.SAMPLE_DIR,
     )
 
 

@@ -1,10 +1,7 @@
 """Page 5: Metrics Panel — Quantitative evaluation and paper-ready exports."""
 
-import sys
 from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))  # prototype root
-sys.path.insert(0, str(Path(__file__).parent.parent))         # app dir
+import sys; sys.path.insert(0, str(Path(__file__).parent.parent)); import path_setup
 
 import streamlit as st
 import pandas as pd
@@ -42,7 +39,7 @@ st.divider()
 st.subheader("Decision Accuracy by Loan Amount")
 
 try:
-    sample_dir = Path(__file__).parent.parent.parent / "data" / "sample"
+    sample_dir = path_setup.SAMPLE_DIR
     cases_df = pd.read_parquet(sample_dir / "sample_cases.parquet")
 
     fig = px.scatter(
@@ -115,8 +112,8 @@ st.markdown(
 def load_conformance():
     try:
         from src.evaluation.conformance import run_conformance_analysis
-        events_path = Path(__file__).parent.parent.parent / "data" / "sample" / "sample_events.parquet"
-        results_dir = Path(__file__).parent.parent.parent / "data" / "results"
+        events_path = path_setup.SAMPLE_DIR / "sample_events.parquet"
+        results_dir = path_setup.RESULTS_DIR
         return run_conformance_analysis(events_path, results_dir)
     except Exception as e:
         return {"error": str(e)}

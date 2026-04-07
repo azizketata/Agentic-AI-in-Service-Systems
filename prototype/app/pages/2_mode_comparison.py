@@ -1,10 +1,7 @@
 """Page 2: Mode Comparison — Side-by-side three-mode results with real data."""
 
-import sys
 from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))  # prototype root
-sys.path.insert(0, str(Path(__file__).parent.parent))         # app dir
+import sys; sys.path.insert(0, str(Path(__file__).parent.parent)); import path_setup
 
 import streamlit as st
 import pandas as pd
@@ -19,7 +16,7 @@ st.markdown("Compare Rule-Based, Agentic, and Governed processing results.")
 
 @st.cache_data
 def load_results():
-    results_dir = Path(__file__).parent.parent.parent / "data" / "results"
+    results_dir = path_setup.RESULTS_DIR
     results = {}
     for mode in ["rule_based", "agentic", "governed"]:
         path = results_dir / f"{mode}_results.json"
@@ -31,7 +28,7 @@ def load_results():
 
 @st.cache_data
 def load_cases():
-    sample_dir = Path(__file__).parent.parent.parent / "data" / "sample"
+    sample_dir = path_setup.SAMPLE_DIR
     cases = pd.read_parquet(sample_dir / "sample_cases.parquet")
     from src.governance.autonomy_tiers import classify_autonomy_tier
     cases["autonomy_tier"] = cases.apply(

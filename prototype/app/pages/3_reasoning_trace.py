@@ -2,11 +2,8 @@
 
 import json
 import time
-import sys
 from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))  # prototype root
-sys.path.insert(0, str(Path(__file__).parent.parent))         # app dir
+import sys; sys.path.insert(0, str(Path(__file__).parent.parent)); import path_setup
 
 import streamlit as st
 import pandas as pd
@@ -25,7 +22,7 @@ tab_view, tab_experiment = st.tabs(["View Traces", "HITL Experiment"])
 @st.cache_data
 def load_cases():
     try:
-        sample_dir = Path(__file__).parent.parent.parent / "data" / "sample"
+        sample_dir = path_setup.SAMPLE_DIR
         return pd.read_parquet(sample_dir / "sample_cases.parquet")
     except FileNotFoundError:
         return None
@@ -34,7 +31,7 @@ def load_cases():
 @st.cache_data
 def load_agentic_results():
     try:
-        path = Path(__file__).parent.parent.parent / "data" / "results" / "agentic_results.json"
+        path = path_setup.RESULTS_DIR / "agentic_results.json"
         with open(path) as f:
             return json.load(f)
     except FileNotFoundError:
@@ -248,6 +245,6 @@ with tab_experiment:
 
             # Save button
             if st.button("Save Experiment Results"):
-                save_path = Path(__file__).parent.parent.parent / "data" / "results" / "hitl_experiment.json"
+                save_path = path_setup.RESULTS_DIR / "hitl_experiment.json"
                 save_experiment_results(st.session_state.experiment_trials, save_path)
                 st.success(f"Saved {len(st.session_state.experiment_trials)} trials to {save_path.name}")
