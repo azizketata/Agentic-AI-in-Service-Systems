@@ -1,8 +1,7 @@
 # ===========================================
-# ICIS Paper - exclude from version control
+# ICIS Paper - exclude entire folder
 # ===========================================
-icis-2026-paper/sections/*.tex
-icis-2026-paper/**/*.tex
+icis-2026-paper/
 
 # LaTeX build artifacts (in case of local compilation)
 *.aux
@@ -23,8 +22,8 @@ icis-2026-paper/**/*.tex
 *.snm
 *.vrb
 
-# PDF outputs (keep source papers but exclude compiled outputs)
-icis-2026-paper/*.pdf
+# CLAUDE.md
+CLAUDE.md
 
 # Overleaf sync artifacts
 *.synctex.gz(busy)
@@ -54,4 +53,4 @@ prototype/data/raw/
 prototype/data/processed/
 prototype/data/processed_sepsis/
 
-prototype/CLAUDE.md
+prototype/*.md
